@@ -1,5 +1,13 @@
 # TechAI – Multipurpose AI-Based Landing Page VUE.JS Template
 
+[![TechAI Demo](https://raw.githubusercontent.com/UsmanLiaqat404/tech-ai-vue/main/tech-ai-vue/src/assets/images/demos/Voice%20Over.png)](https://techai.rbcnews24.com/)
+
+[![TechAI Demo](https://github.com/UsmanLiaqat404/tech-ai-vue/blob/main/tech-ai-vue/src/assets/images/demos/Content%20Writer.png?raw=true)](https://techai.rbcnews24.com/home-2)
+
+[![TechAI Demo](https://github.com/UsmanLiaqat404/tech-ai-vue/blob/main/tech-ai-vue/src/assets/images/demos/Resume%20Builder.png?raw=true)](https://techai.rbcnews24.com/home-4)
+
+[![TechAI Demo](https://github.com/UsmanLiaqat404/tech-ai-vue/blob/main/tech-ai-vue/src/assets/images/demos/Background%20Remover.png?raw=true)](https://techai.rbcnews24.com/home-3)
+
 Are you ready to harness the incredible potential of AI writing? TechAI is a responsive website template for AI Content Writing and Generation websites. With its stunning functionality and aesthetics, TechAI is the ultimate choice for website building for AI Writing, Copywriting, OpenAI Content Generation, and AI Content. Let us reveal the possibilities that TechAI brings to the table. TechAI has remarkable features to elevate your AI writing website. It brings 06 charming homepages to choose from. So you can create a unique online presence for the target audience. Present your AI writing services in a visually stunning and engaging manner. Thus, set yourself apart from the competition.
 
 TechAI exceeds expectations with peerless coding standards. The template’s W3-validated codes perform equally across all browsers. Using the latest Bootstrap 5, Vanilla JS, and SASS, TechAI is unique in the template industry.
