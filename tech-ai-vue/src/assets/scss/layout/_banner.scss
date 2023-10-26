@@ -1,0 +1,253 @@
+/* ==== 
+ --------- (4.2) banner styles start ---------
+ ==== */
+
+// banner one
+.banner-one {
+  padding: 226px 0px 184px;
+
+  .banner-one__content {
+    .h6 {
+      color: $white;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+
+      span {
+        padding: 10px 20px;
+        background-color: $primary-color;
+        line-height: 1;
+        border-radius: 0px 30px 30px;
+      }
+    }
+
+    .h1 {
+      color: $white;
+    }
+
+    .section__content-cta {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// banner two
+
+.banner-two {
+  padding: 310px 0px 220px;
+  overflow: hidden !important;
+  position: relative;
+  background-image: url("../images/banner/banner-two-bg-light.png");
+  background-size: auto 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    @include box(60px);
+    background: url("../images/banner/circle.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: anime 12s ease-in-out infinite alternate-reverse;
+  }
+
+  .banner-two__content {
+    text-align: center;
+    h2 {
+      background: linear-gradient(90.05deg, #e0013f 23.44%, #7600ab 99.98%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-top: 30px;
+    }
+
+    p {
+      max-width: 530px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
+
+  .section__content-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    p {
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #435374;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-top: 0px;
+    }
+  }
+
+  .anime {
+    img {
+      position: absolute;
+      z-index: -1;
+      animation: animeTwo 9s ease-in-out infinite;
+    }
+
+    .one {
+      top: 40%;
+      left: calc(50% - 740px);
+      animation: animeTwo 9s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+
+    .two {
+      top: 26%;
+      left: calc(50% + 520px);
+      animation-delay: 2s;
+      animation: animeTwo 9s ease-in-out infinite;
+    }
+
+    .three {
+      bottom: 120px;
+      left: 25%;
+    }
+
+    .four {
+      bottom: 240px;
+      right: 23%;
+      animation-direction: alternate-reverse;
+    }
+
+    .five {
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-direction: reverse;
+    }
+  }
+}
+
+// banner three
+.banner-three {
+  padding-top: 118px;
+  .banner-three__inner {
+    padding: 65px 65px;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .banner-three__content {
+    p {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .section__content-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .try-this {
+      border: 1px dashed #ffffff;
+      border-radius: 100px;
+      padding: 3px 40px 3px 3px;
+      display: inline-flex;
+      gap: 10px;
+
+      .thumb {
+        img {
+          width: 48px;
+          height: 48px;
+          border: 3px solid #46a1cc;
+          border-radius: 50%;
+          margin-left: -16px;
+          &:nth-of-type(1) {
+            margin-left: 0px;
+          }
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        span {
+          line-height: 1;
+          font-size: 14px;
+          font-weight: 500;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .h2-light {
+    color: $white;
+  }
+
+  .banner-three-pagination {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    .slick-dots {
+      justify-content: center;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+  }
+}
+
+// cmn banner
+.cmn-banner {
+  margin-top: 118px;
+  background-image: url("../images/banner/banner-bg.png");
+  background-size: 100% 100%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+
+  .cmn-banner__content {
+    text-align: center;
+    margin-top: -10px;
+    .h3 {
+      color: $white;
+    }
+  }
+
+  .anime {
+    img {
+      position: absolute;
+      z-index: -1;
+      animation: anime 10s ease infinite;
+    }
+
+    .one {
+      left: 40px;
+      top: 40px;
+    }
+
+    .two {
+      right: 40px;
+      bottom: 40px;
+    }
+  }
+}
+
+/* ==== 
+ --------- (4.2) banner styles end ---------
+ ==== */

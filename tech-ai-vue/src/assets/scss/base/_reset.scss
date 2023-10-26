@@ -1,0 +1,201 @@
+/* ==== 
+ --------- (2.1) reset styles start ---------
+ ==== */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+
+  &::-moz-selection {
+    color: #ffffff;
+    background-color: #1770c8;
+  }
+
+  &::selection {
+    color: #ffffff;
+    background-color: #1770c8;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $theme-font;
+  font-size: 16px;
+  line-height: 0px;
+  font-weight: 400;
+  color: $theme-color;
+  background-color: $theme-bg;
+  overflow-x: clip;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #cae6f7;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-button,
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 5px;
+  }
+}
+
+a,
+button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  outline: 0px;
+  border: 0px;
+  transition: $transition;
+
+  i {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    transition: $transition;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border: 0px;
+    outline: 0px;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+
+  &:focus {
+    box-shadow: 0px 0px 0px;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0px;
+  padding: 0px;
+}
+
+blockquote,
+hr {
+  margin: 0px;
+}
+
+hr {
+  opacity: 1;
+  margin: 0px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0px solid transparent;
+}
+
+input,
+textarea {
+  border: 0px;
+  outline: 0px;
+
+  &:focus {
+    box-shadow: 0px 0px 0px;
+  }
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0px;
+  }
+
+  &::placeholder {
+    color: inherit;
+    font-size: inherit;
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="checkbox"] {
+  width: initial;
+  height: initial;
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+iframe {
+  border: 0px;
+  width: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+  color: $theme-color;
+  font-family: $space-grotesk;
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.pogat > * {
+  margin-bottom: 40px;
+}
+/* ==== 
+ --------- (2.1) reset styles end ---------
+ ==== */

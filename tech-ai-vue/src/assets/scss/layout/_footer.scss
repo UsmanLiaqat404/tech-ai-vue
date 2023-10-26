@@ -1,0 +1,237 @@
+/* ==== 
+ --------- (4.3) footer styles start ---------
+ ==== */
+
+.footer {
+  .footer__single {
+    margin-top: -10px;
+    .h5 {
+      color: $white;
+    }
+
+    ul {
+      margin-top: 30px;
+
+      li {
+        margin-bottom: 12px;
+        &:nth-last-of-type(1) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    a {
+      font-weight: 400;
+      color: $white;
+      &:hover {
+        padding-left: 8px;
+        color: $septenary-color;
+      }
+    }
+  }
+
+  .copyright-inner {
+    padding: 20px;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    margin-top: 65px;
+    margin-bottom: 40px;
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      a {
+        color: $white;
+        font-size: 20px;
+        &:hover {
+          color: $septenary-color;
+        }
+      }
+    }
+
+    p {
+      color: #949494;
+      font-weight: 400;
+      a {
+        color: #949494;
+        transition: $transition;
+        font-weight: 400;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .anime {
+    img {
+      position: absolute;
+      z-index: -1;
+      animation: anime 8s ease-in-out infinite;
+    }
+
+    .one {
+      top: 130px;
+      left: 0px;
+    }
+
+    .two {
+      bottom: 190px;
+      right: 0px;
+      animation-delay: 0.9s;
+    }
+  }
+}
+
+// footer two
+.footer-two {
+  background-position: left top;
+  padding-bottom: 65px;
+  .bt {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 10%;
+      width: 1px;
+      height: 100%;
+      background-color: #414141;
+      z-index: -1;
+    }
+  }
+  .footer-two__single {
+    height: 100%;
+    .h5 {
+      color: $white;
+      margin-top: -10px;
+    }
+
+    ul {
+      margin-top: 30px;
+
+      li {
+        margin-bottom: 12px;
+        &:nth-last-of-type(1) {
+          margin-bottom: 0px;
+        }
+      }
+
+      a {
+        font-weight: 400;
+        color: $white;
+        &:hover {
+          padding-left: 8px;
+          color: $septenary-color;
+        }
+      }
+    }
+
+    .logo {
+      margin-bottom: 36px;
+    }
+
+    p {
+      a {
+        color: inherit;
+        transition: $transition;
+        &:hover {
+          color: $quinary-color;
+        }
+      }
+    }
+
+    .social {
+      justify-content: flex-start;
+      margin-top: 50px;
+
+      a {
+        font-size: 24px;
+        color: $white;
+        &:hover {
+          color: $quinary-color;
+        }
+      }
+    }
+
+    .footer-two__form {
+      padding: 20px;
+      background-image: url("../images/footer-two-form-bg.png");
+      background-size: cover;
+      background-position: left center;
+      margin-top: 30px;
+      border-radius: 10px;
+
+      .h6 {
+        color: $white;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+// footer three
+.footer-three {
+  .top-break {
+    p {
+      font-size: 17px;
+    }
+  }
+
+  #footer-break {
+    height: 1px;
+    opacity: 1;
+    background-color: #232f47;
+    margin: 65px 0px;
+  }
+
+  .social {
+    a {
+      font-size: 24px;
+      color: $white;
+      &:hover {
+        color: $septenary-color;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 20px;
+    background-color: #232f47;
+    margin-top: 65px;
+    p {
+      color: #949494;
+      font-weight: 400;
+      a {
+        color: #949494;
+        transition: $transition;
+        font-weight: 400;
+        &:hover {
+          color: $septenary-color;
+        }
+      }
+    }
+  }
+}
+
+.footer-light {
+  .footer__single {
+    .h5 {
+      color: $theme-color;
+    }
+
+    a {
+      color: #3f3f3f;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* ==== 
+ --------- (4.3) footer styles end ---------
+ ==== */

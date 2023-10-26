@@ -1,0 +1,402 @@
+/* ==== 
+ --------- (2.3) global styles start ---------
+ ==== */
+
+.my-app {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: clip !important;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 0px;
+  outline: 0px;
+}
+
+i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide {
+  margin: 0px 15px;
+
+  img {
+    display: inline-block;
+  }
+}
+
+.slick-list {
+  margin: 0px -15px;
+}
+
+.unset {
+  max-width: unset;
+}
+
+.bg-img {
+  @include background($theme-color, no-repeat, cover, center center);
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.bg-tertiary {
+  background-color: $tertiary-color;
+}
+
+.bg-quaternary {
+  background-color: $quaternary-color;
+}
+
+.bg-quinary {
+  background-color: $quinary-color;
+}
+
+.bg-senary {
+  background-color: $senary-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-tertiary {
+  color: $tertiary-color;
+}
+
+.text-quaternary {
+  color: $quaternary-color;
+}
+
+.text-quinary {
+  color: $quinary-color;
+}
+
+.text-senary {
+  color: $senary-color;
+}
+
+.section {
+  padding: 140px 0px;
+  position: relative;
+  z-index: 1;
+  overflow-x: clip !important;
+}
+
+.section__cta {
+  margin-top: 65px;
+}
+
+.section__content-cta {
+  margin-top: 65px;
+}
+
+.items-gap {
+  row-gap: 30px;
+}
+
+.items-gap-two {
+  row-gap: 60px;
+}
+
+.section__header {
+  margin-bottom: 65px;
+  text-align: center;
+  margin-top: -10px;
+  .h2 {
+    font-weight: 700;
+  }
+
+  p {
+    color: $white;
+    margin-top: 20px;
+  }
+
+  .max-5 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section__header--secondary {
+  margin-bottom: 65px;
+  margin-top: -10px;
+}
+
+.section__content {
+  margin-top: -10px;
+  .paragraph {
+    margin-top: 30px;
+    p {
+      margin-bottom: 30px;
+      &:nth-last-of-type(1) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 0px;
+  margin-top: 30px;
+  .breadcrumb-item,
+  a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $white;
+    a {
+      &:hover {
+        color: $septenary-color;
+      }
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 12px;
+    &::before {
+      padding-right: 12px;
+      content: "/";
+      font-weight: 600;
+      color: $white;
+    }
+  }
+
+  .active {
+    color: $white;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  a {
+    color: #ffffff70;
+    &:hover {
+      color: $secondary-color;
+    }
+
+    i {
+      transition: none;
+    }
+  }
+}
+
+.cmn-pagination {
+  button {
+    text-indent: -9999px;
+  }
+
+  .slick-dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-end;
+    button {
+      width: 28px;
+      height: 28px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      position: relative;
+      transition: $transition;
+      border-radius: 50%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: $septenary-color;
+        border-radius: 50%;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: transparent;
+        border: 1px solid $septenary-color;
+      }
+    }
+  }
+}
+
+.cmn-pagination-light {
+  .slick-dots {
+    button {
+      &::before {
+        background-color: $primary-color;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: transparent;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+}
+
+@keyframes anime {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes animeTwo {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes lr {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes tb {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(15px);
+  }
+}
+
+.slide-btn {
+  @include box(70px);
+  border: 0px;
+  transition: $transition;
+  background-color: $secondary-color;
+  color: $white;
+  font-size: 20px;
+  z-index: 2;
+  &:hover {
+    color: $white;
+    background-color: $quinary-color;
+  }
+}
+
+.grd {
+  background: linear-gradient(90.05deg, #e0013f 23.44%, #7600ab 99.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.7);
+    opacity: 0;
+  }
+}
+
+.video-wrap {
+  a {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      border-radius: 50%;
+      background-color: inherit;
+      opacity: 0.8;
+      z-index: -1;
+      animation: wave 3s linear infinite;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 40px);
+      height: calc(100% + 40px);
+      border-radius: 50%;
+      background-color: inherit;
+      opacity: 0.4;
+      z-index: -2;
+      animation: wave 6s linear infinite;
+      animation-delay: 1s;
+    }
+  }
+}
+
+/* ==== 
+   --------- (2.3) global styles end ---------
+   ==== */

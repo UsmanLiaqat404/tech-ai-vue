@@ -1,0 +1,87 @@
+/* ==============
+ ========= css documentation =========
+
+ * theme name: TechAi
+ * version: 1.0
+ * description: AI Toolkit HTML5 Template
+
+ 01. abstracts
+     1.1 --> mixins
+     1.2 --> variables
+    
+ 02. base
+     2.1 --> reset
+     2.2 --> typography
+     2.3 --> global
+
+ 03. components
+     3.1 --> buttons
+     3.2 --> forms
+     3.3 --> preloader
+
+ 04. layout
+     4.1 --> header
+     4.2 --> banner
+     4.3 --> footer
+
+ 05. sections
+     5.01 --> overview
+     5.02 --> voice
+     5.03 --> clone
+     5.04 --> sponsor
+     5.05 --> tour
+     5.06 --> case slider
+     5.07 --> broadcast
+     5.08 --> faq
+     5.09 --> language
+     5.10 --> review
+     5.11 --> testimonial two
+     5.12 --> generate
+     5.13 --> publish
+     5.14 --> features
+     5.15 --> pricing
+     5.16 --> tools
+     5.17 --> remove
+     5.18 --> workflow
+     5.19 --> eraser
+     5.20 --> explore
+     5.21 --> update cta
+     5.22 --> error
+     5.23 --> authentication
+     5.24 --> contact
+     5.25 --> blog
+     5.26 --> news section
+     5.27 --> team
+     5.28 --> about
+     5.29 --> use case
+     5.30 --> light home pages
+
+ 06. responsive
+
+    =========================
+============== */
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/preloader";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/all-sections";
+
+// responsive styles
+@import "./responsive";

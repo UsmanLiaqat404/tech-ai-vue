@@ -1,0 +1,353 @@
+/* ==== 
+ --------- (3.1) buttons styles start ---------
+ ==== */
+
+.btn {
+  padding: 20px 40px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: capitalize;
+  background-color: transparent;
+  border-radius: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 0px solid transparent;
+}
+
+.btn--primary {
+  color: $white;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #8fffec 0%, #4569e7 95.62%);
+    background-size: 100% auto;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
+    color: $white;
+    &::before {
+      background-size: 140% auto;
+      background-position: right center;
+    }
+  }
+}
+
+.btn--secondary {
+  border: 1px solid $white;
+  color: $white;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 1px solid $primary-color;
+    color: $white;
+
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+.btn--tertiary {
+  border: 1px solid $septenary-color;
+  color: $septenary-color;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 1px solid $primary-color;
+    color: $white;
+
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+.btn--quaternary {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 1px solid $primary-color;
+    color: $white;
+
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+.btn--quinary {
+  border: 0px solid transparent;
+  color: $primary-color;
+  background-color: $white;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 0px solid $primary-color;
+    color: $white;
+    background-color: $primary-color;
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+.btn--senary {
+  color: $white;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #e0013f 0%, #8733ff 95.62%);
+    background-size: 100% auto;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
+    color: $white;
+    &::before {
+      background-size: 180% auto;
+      background-position: right center;
+    }
+  }
+}
+
+.btn--septenary {
+  border: 1px solid $white;
+  color: $white;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #e0013f 0%, #8733ff 95.62%);
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 1px solid #e0013f;
+    color: $white;
+
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+.btn--ocotonary {
+  border: 0px solid transparent;
+  color: $white;
+  background-color: #756cf5;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 0px solid $primary-color;
+    color: $white;
+    background-color: $primary-color;
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+.btn--nonary {
+  border: 0px solid transparent;
+  color: $white;
+  background-color: $primary-color;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: #756cf5;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover {
+    border: 0px solid #756cf5;
+    color: $white;
+    background-color: #756cf5;
+    &::before {
+      width: 100%;
+      left: unset;
+      right: 0%;
+    }
+  }
+}
+
+// scroll to top with progress
+
+.progress-wrap {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  background-color: $white;
+  box-shadow: inset 0 0 0 8px #c3b4ba7d;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
+  z-index: 99;
+}
+
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.progress-wrap::after {
+  position: absolute;
+  content: "\f102";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  color: $primary-color;
+  left: 0%;
+  top: 0%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+
+.progress-wrap::before {
+  position: absolute;
+  content: "\f102";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  opacity: 0;
+  background: $primary-color;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0%;
+  top: 0%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+
+.progress-wrap svg path {
+  fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+  stroke: $primary-color;
+  stroke-width: 4;
+  box-sizing: content-box;
+  transition: all 200ms linear;
+}
+
+/* ==== 
+ --------- (3.1) buttons styles end ---------
+ ==== */

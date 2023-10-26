@@ -1,0 +1,153 @@
+/* ==== 
+ --------- (3.2) forms styles start ---------
+ ==== */
+
+.mail-group {
+  padding: 0px 20px 0px 0px;
+  background-color: $white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  input {
+    flex-grow: 1;
+    padding: 12px 12px 12px 20px;
+    background-color: transparent;
+    width: calc(100% - 36px);
+    &::placeholder {
+      color: #818181;
+    }
+  }
+
+  button {
+    font-size: 20px;
+    color: #e0013f;
+  }
+}
+
+.mail-group-two {
+  padding: 5px;
+  background-color: $white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  input {
+    flex-grow: 1;
+    padding: 12px 12px 12px 20px;
+    background-color: transparent;
+    &::placeholder {
+      color: #818181;
+    }
+  }
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 18px 30px;
+    line-height: 1;
+    span {
+      line-height: 1;
+      color: inherit;
+      font-weight: 700;
+    }
+    i {
+      font-size: 20px;
+      transition: inherit;
+    }
+  }
+}
+
+.search-group {
+  position: relative;
+  input {
+    width: 100%;
+    padding: 16px 60px 16px 20px;
+    border: 1px solid #d9d9d9;
+    line-height: 18px;
+    &::placeholder {
+      color: #969696;
+    }
+
+    &:focus {
+      border: 1px solid $theme-color;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+    color: #646464;
+    transform: translateY(-50%);
+  }
+}
+
+.form-cta {
+  margin-top: 40px;
+}
+
+.comment-group-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+
+  .comment-group {
+    margin-bottom: 0px;
+    width: calc(50% - 15px);
+  }
+}
+
+.comment-group {
+  input,
+  textarea {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: $white;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    line-height: 18px;
+
+    &::placeholder {
+      color: #969696;
+    }
+  }
+}
+
+.frm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: $theme-color;
+  border: 1px solid #d9d9d9;
+  i {
+    transform: rotate(-45deg);
+    transition: none;
+  }
+
+  &:hover {
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.input-single {
+  input {
+    width: 100%;
+    padding: 20px 16px 0px 20px;
+    line-height: 18px;
+    &::placeholder {
+      color: $theme-color;
+    }
+  }
+}
+
+/* ==== 
+ --------- (3.2) forms styles end ---------
+ ==== */

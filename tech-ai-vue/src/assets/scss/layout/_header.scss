@@ -1,0 +1,385 @@
+/* ==== 
+ --------- (4.1) header styles start ---------
+ ==== */
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 99;
+  background: $white;
+
+  .nav {
+    padding: 30px 0px;
+    background-color: $white;
+    border-radius: 0px;
+  }
+
+  .nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    column-gap: 80px;
+    min-width: 100%;
+  }
+
+  .nav__menu {
+    flex-grow: 1;
+  }
+
+  .nav__menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav__menu-link {
+    padding: 10px 16px;
+    color: $theme-color;
+    font-weight: 500;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .nav__menu-item--dropdown {
+    position: relative;
+
+    .nav__dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      min-width: 200px;
+      max-width: 300px;
+      background-color: $white;
+      padding: 30px;
+      border-radius: 5px;
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition;
+      transform: translateY(30px);
+      box-shadow: $shadow;
+      max-height: 320px;
+      overflow-y: auto;
+      pointer-events: none;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      li {
+        margin-bottom: 10px;
+
+        &:nth-last-of-type(1) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    &:hover {
+      .nav__dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        pointer-events: all;
+      }
+    }
+
+    .nav__dropdown-item {
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      color: $theme-color;
+
+      &:hover {
+        padding-left: 8px;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .nav__menu-link--dropdown {
+    position: relative;
+
+    &::after {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f107";
+      border: none;
+      font-size: 16px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .nav__menu-item--dropdown {
+    &:hover {
+      .nav__menu-link--dropdown {
+        color: $primary-color;
+
+        &::after {
+          transform: rotate(180deg);
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .nav__dropdown--alt {
+    max-width: 600px !important;
+    min-width: 400px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    width: 100%;
+    ul {
+      width: calc(50% - 12px);
+      &:nth-of-type(1) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .nav__uncollapsed {
+    display: flex;
+    gap: 30px;
+    .btn {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      background-color: inherit;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 40px;
+    display: none;
+    a {
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .nav__uncollapsed-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .btn {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      background-color: inherit;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .nav__bar {
+    padding: 0px;
+    display: inline-block;
+    background-color: transparent;
+
+    span {
+      transform: translateY(0px);
+    }
+
+    .icon-bar {
+      width: 35px;
+      height: 2px;
+      background-color: $theme-color;
+      margin: 0px;
+      display: block;
+      transition: all 0.3s;
+    }
+
+    .middle-bar {
+      margin: 6px 0px;
+      opacity: 1;
+    }
+  }
+
+  .nav__bar-toggle {
+    .top-bar {
+      transform: rotate(-45deg) translate(-7px, 4px);
+      background: $primary-color;
+    }
+
+    .middle-bar {
+      opacity: 0;
+    }
+
+    .bottom-bar {
+      transform: rotate(45deg) translate(-7px, -4px);
+      background: $primary-color;
+    }
+  }
+}
+
+.header-active {
+  background-color: $white;
+  animation: header 0.5s linear;
+  top: 0px;
+  z-index: 99;
+  box-shadow: $shadow;
+
+  .nav {
+    box-shadow: none !important;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #12121260;
+  z-index: 9;
+  transform: translateX(-100%);
+  transition: $transition;
+  display: none;
+}
+
+.backdrop-active {
+  transform: translateX(0px);
+}
+
+.body-active {
+  overflow: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// header dark
+.header--dark {
+  background-color: transparent;
+
+  .nav {
+    background-color: transparent;
+  }
+
+  .nav__menu-link {
+    color: $white;
+    &:hover {
+      color: $septenary-color;
+    }
+  }
+
+  .nav__menu-item--dropdown {
+    &:hover {
+      .nav__menu-link--dropdown {
+        color: $septenary-color;
+        &::after {
+          color: $septenary-color;
+        }
+      }
+    }
+  }
+
+  .nav__menu-link--dropdown {
+    color: $white;
+    &::after {
+      color: $white;
+    }
+
+    &:hover {
+      color: $septenary-color !important;
+      &::after {
+        color: $septenary-color !important;
+      }
+    }
+  }
+
+  .nav__uncollapsed-item .btn {
+    border: 1px solid $septenary-color;
+    color: $white;
+    background-color: inherit;
+    &::before {
+      background-color: $septenary-color;
+    }
+    &:hover {
+      border: 1px solid $septenary-color;
+      color: $primary-color;
+    }
+  }
+
+  .nav__bar {
+    .icon-bar {
+      background-color: $white;
+    }
+  }
+
+  .backdrop {
+    background-color: #756cf5;
+    opacity: 0.4;
+  }
+}
+
+.header--dark.header-active {
+  background-color: $theme-bg-dark !important;
+}
+
+.header-two {
+  .nav__uncollapsed-item {
+    .btn {
+      border-color: $quinary-color;
+      color: $quinary-color;
+      &:hover {
+        color: $white;
+        border-color: $quinary-color;
+      }
+    }
+  }
+
+  .backdrop {
+    background-color: $quinary-color;
+    opacity: 0.5;
+  }
+
+  .nav__menu-item {
+    &:nth-last-of-type(1) {
+      .btn {
+        color: $quinary-color !important;
+        border: 1px solid $quinary-color !important;
+        &:hover {
+          color: $white !important;
+          border-color: $quinary-color !important;
+        }
+      }
+    }
+  }
+
+  .social {
+    a {
+      background-color: $quinary-color !important;
+      color: $white !important;
+      &:hover {
+        background-color: $white !important;
+        color: $quinary-color !important;
+      }
+    }
+  }
+}
+
+/* ==== 
+ --------- (4.1) header styles end ---------
+ ==== */
