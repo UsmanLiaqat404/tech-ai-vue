@@ -34,3 +34,9 @@ Use this opportunity to make a lasting impression in the AI writing industry. Ta
 - Well documentation
 - Free Icon & Custom Made Illustration Used from [Flaticon](www.flaticon.com)
 - Image & Illustration Source from [Freepik](www.freepik.com) and [Unsplash](www.unsplash.com)
+
+## Show Your Support
+
+If you find this project helpful, please consider starring the repository to show your support and to stay updated with its progress.
+
+[![GitHub stars](https://img.shields.io/github/stars/UsmanLiaqat404/tech-ai-vue.svg?style=social)](https://github.com/UsmanLiaqat404/tech-ai-vue/stargazers)
